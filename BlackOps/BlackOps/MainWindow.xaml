@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackOps"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="500">
     <Grid>
-        
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="104*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Label Content="Usuario"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBox
+                x:Name="TextUsuario">
+
+            </TextBox>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Label Content="Contraseña"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <PasswordBox
+                x:Name="TextPassword">
+
+            </PasswordBox>
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Button 
+                    x:Name="ButtonIngreso"
+                    Content="INGRESAR" HorizontalAlignment="Center" 
+                    Click="ButtonIngresoOnClick"
+                    TabIndex="3"
+                    IsEnabled="True"
+                    IsDefault="True"
+                    Visibility="Visible" Margin="10" Width="472"/>
+        </Grid>
+
     </Grid>
 </Window>

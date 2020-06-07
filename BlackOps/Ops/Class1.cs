@@ -11,12 +11,17 @@
 
     public class Class1
     {
-        IFirebaseConfig config = new FirebaseConfig
+        public void Conectar()
+        {
+            IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "ialdMTdBT4y5CRpzTAO2AuoDhZF4R5A4YMhbrCig",
             BasePath = "https://blackops-63cb7.firebaseio.com/"
         };
 
-        IFirebaseClient firebaseClient;
+            IFirebaseClient firebaseClient;
+        }
+
+        
     }
 }

@@ -24,5 +24,28 @@ namespace BlackOps
         {
             InitializeComponent();
         }
+
+        private void ButtonIngresoOnClick(object sender, RoutedEventArgs e)
+        {
+            var user = TextUsuario.Text;
+            var pass = TextPassword.Password;
+
+            if (validar_datos_entrada(user, pass))
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Error al intentar inciar", "BlackOps", MessageBoxButton.OK, MessageBoxImage.Warning);
+                TextUsuario.Text = string.Empty;
+                TextPassword.Password = string.Empty;
+            }
+
+        }
+
+        private bool validar_datos_entrada(string user, string pass)
+        {
+            return user == "kilo" && pass == "lima64";
+        }
     }
 }
