@@ -1,13 +1,9 @@
 ﻿namespace Ops
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using FireSharp.Config;
     using FireSharp.Interfaces;
     using FireSharp.Response;
+    using Models;
 
     public class Class1
     {
@@ -17,6 +13,8 @@
             BasePath = "https://blackops-63cb7.firebaseio.com/"
         };
 
+        IFirebaseClient firebaseClient;
+
         public bool Conectar()
         {
             return Conect();
@@ -24,7 +22,6 @@
 
         public bool Conect()
         {
-            IFirebaseClient firebaseClient;
             firebaseClient = new FireSharp.FirebaseClient(config);
 
             if(firebaseClient != null)
@@ -33,6 +30,12 @@
                 return false;
         }
 
-        
+        public async System.Threading.Tasks.Task<Data> InsertAsync(string text, Data data)
+        {
+            SetResponse response = await firebaseClient.SetTaskAsync("Cuentas/" + text, data);
+            Data result = response.ResultAs<Data>();
+            return result;
+        }
+
     }
 }

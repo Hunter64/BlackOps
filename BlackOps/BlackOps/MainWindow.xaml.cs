@@ -1,4 +1,6 @@
-﻿using Ops;
+﻿using BlackOps.Interfaz;
+using BlackOps.Interfaz2;
+using Ops;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +39,11 @@ namespace BlackOps
                 bool is_conected = class1.Conectar();
                 if (is_conected)
                 {
-                    MessageBox.Show("Conectado a la base");
+                    //MessageBox.Show("Conectado a la base");
+
+                    new Create().Show();
+                    //new Captura().Show();
+                    Close();
                 }
                 else
                 {

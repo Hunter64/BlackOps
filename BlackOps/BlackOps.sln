@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOps", "BlackOps\BlackO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops", "Ops\Ops.csproj", "{C5B6AE5D-3DCB-4C39-ACD4-A7437A7AD63E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{A6C3DFE6-A421-41B4-8968-900B10B5639B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5B6AE5D-3DCB-4C39-ACD4-A7437A7AD63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5B6AE5D-3DCB-4C39-ACD4-A7437A7AD63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5B6AE5D-3DCB-4C39-ACD4-A7437A7AD63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C3DFE6-A421-41B4-8968-900B10B5639B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C3DFE6-A421-41B4-8968-900B10B5639B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C3DFE6-A421-41B4-8968-900B10B5639B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C3DFE6-A421-41B4-8968-900B10B5639B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

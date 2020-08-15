@@ -1,0 +1,91 @@
+﻿<Window x:Class="BlackOps.Interfaz2.Create"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackOps.Interfaz2"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded" 
+        Title="Create" Height="400" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="285"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Label Content="Cuenta: "></Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Label Content="Concepto: "></Label>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Label Content="Fecha: "></Label>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Label Content="Inicial: "></Label>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0">
+                <Label Content="Cargo: "></Label>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0">
+                <Label Content="Abono: "></Label>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0">
+                <Label Content="Final: "></Label>
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="2">
+                <TextBox Name="Cuenta"></TextBox>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <TextBox Name="Concepto"></TextBox>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="2">
+                <DatePicker Name="Fecha"></DatePicker>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="2">
+                <TextBox Name="Inicial" LostFocus="Inicial_LostFocus"></TextBox>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="2">
+                <TextBox Name="Cargo"></TextBox>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="2">
+                <TextBox Name="Abono"></TextBox>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="2">
+                <TextBox Name="Final"></TextBox>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="0">
+            <Label Content="Capturar Nueva Cuenta"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button Width="75" Content="Salvar" Cursor="Hand" Click="Button_Click" Margin="407,0,10,0"/>
+        </Grid>
+
+    </Grid>
+</Window>
