@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ops;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,8 @@ namespace BlackOps
 
             if (validar_datos_entrada(user, pass))
             {
-                
+                Class1 class1 = new Class1();
+                class1.Conectar();
             }
             else
             {
