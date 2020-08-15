@@ -34,7 +34,15 @@ namespace BlackOps
             if (validar_datos_entrada(user, pass))
             {
                 Class1 class1 = new Class1();
-                class1.Conectar();
+                bool is_conected = class1.Conectar();
+                if (is_conected)
+                {
+                    MessageBox.Show("Conectado a la base");
+                }
+                else
+                {
+                    MessageBox.Show("Error de conexión");
+                }
             }
             else
             {
