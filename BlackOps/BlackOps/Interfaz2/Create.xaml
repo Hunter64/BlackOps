@@ -65,7 +65,7 @@
                 <DatePicker Name="Fecha"></DatePicker>
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2">
-                <TextBox Name="Inicial" LostFocus="Inicial_LostFocus"></TextBox>
+                <TextBox Name="Inicial"></TextBox>
             </Grid>
             <Grid Grid.Row="4" Grid.Column="2">
                 <TextBox Name="Cargo"></TextBox>

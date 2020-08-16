@@ -8,12 +8,13 @@ namespace Models
 {
     public class Data
     {
+        public Guid Id { get; set; }
         public string Cuenta { get; set; }
         public string Concepto { get; set; }
         public DateTime Fecha { get; set; }
-        public string Inicial { get; set; }
-        public string Cargo { get; set; }
-        public string Abono { get; set; }
-        public string Final { get; set; }
+        public decimal Inicial { get; set; }
+        public decimal Cargo { get; set; }
+        public decimal Abono { get; set; }
+        public decimal Final { get; set; }
     }
 }

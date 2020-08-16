@@ -1,4 +1,5 @@
 ﻿using Models;
+using Ops;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,19 +38,19 @@ namespace BlackOps.Interfaz2
         {
             Data data = new Data()
             {
-                Abono = Abono.Text,
-                Cargo = Cargo.Text,
+                Id = Guid.NewGuid(),
+                Abono = Convert.ToDecimal(Abono.Text),
+                Cargo = Convert.ToDecimal(Cargo.Text),
                 Concepto = Concepto.Text,
                 Cuenta = Cuenta.Text,
-                Fecha = Fecha.DisplayDate,
-                Final = Final.Text,
-                Inicial = Inicial.Text
+                Fecha = DateTime.Now, //Fecha.DisplayDate,
+                Final = Convert.ToDecimal(Final.Text),
+                Inicial = Convert.ToDecimal(Inicial.Text)
             };
-        }
 
-        private void Inicial_LostFocus(object sender, RoutedEventArgs e)
-        {
-
+            Class1 class1 = new Class1();
+            var result = class1.InsertAsync(data.Id, data);
+            MessageBox.Show("Data " + result);
         }
     }
 }
