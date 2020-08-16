@@ -57,7 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Interfaz2\Create.xaml">
+    <Page Include="Interfaz\Create.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -69,14 +69,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Interfaz2\Create.xaml.cs">
+    <Compile Include="Interfaz\Create.xaml.cs">
       <DependentUpon>Create.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\Captura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Captura.Designer.cs">
-      <DependentUpon>Captura.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -97,9 +91,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Interfaz\Captura.resx">
-      <DependentUpon>Captura.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

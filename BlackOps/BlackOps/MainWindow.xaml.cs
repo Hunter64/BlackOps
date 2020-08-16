@@ -1,5 +1,4 @@
 ﻿using BlackOps.Interfaz;
-using BlackOps.Interfaz2;
 using Ops;
 using System;
 using System.Collections.Generic;

@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-namespace BlackOps.Interfaz2
+namespace BlackOps.Interfaz
 {
     /// <summary>
     /// Interaction logic for Create.xaml
